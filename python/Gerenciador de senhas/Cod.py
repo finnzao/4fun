@@ -1,7 +1,7 @@
 
 import sqlite3
 
-master_pass= "123banana"
+master_pass= "masterword321"
 
 senha_master=input("Password of enter the program: ")
 
