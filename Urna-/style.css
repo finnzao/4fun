@@ -4,6 +4,11 @@
     font-family: 'Poppins', sans-serif;
     
 }
+@keyframes brilhar{
+    0%{ opacity: 0.2;}
+    50%{opacity: 1;}
+    100%{opacity: 0.2;}
+}
 
 
 
@@ -40,7 +45,7 @@
     margin: 10px;
     outline: none;
     font-size: 20px;
-    background-color: green;
+    
     border-radius: 10px;
     
 }
@@ -70,6 +75,11 @@
     display: flex;
     
 }
+.tela-dados span{
+    margin: 15% 0 0 15%;
+    
+}
+
 
 .tela-baixo{
     
@@ -82,26 +92,86 @@
 }
 .cargo{
     height: 50px;
-    background-color: purple;
+    
     
 }
 .cargo-nome{
     display: flex;
-    height: 50px;
-    background-color: salmon;
+    height: 30px;
+    
     
     justify-content: center;
     align-items: center;
 }
 .cargo-escolha{
-    height: 50px;
-    background-color: skyblue;
+    height: 80px;
     
+    justify-content: center;
+    display: flex;
+    align-items: center;
+        
+
+}
+.num{
+    display: inline-block;
+    width: 40px;
+    height: 50px;
+    border:1px solid black;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    margin: 0px 0px 0px 10px;
+}
+.pisca{
+    animation-name: brilhar;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 .cargo-foto{
     flex: 1;
     float: right;
     display: flex;
     height: 50px;
-    background-color: springgreen;
+    
+    
+    
+}
+
+.cargo-foto span{
+    align-items: flex-end;
+    justify-self:self-end;
+}
+.foto-nome{
+    margin-top: 40px;
+    margin-left: 2px;
+}
+.foto{
+    height: 110px;
+    width: 300px;
+    
+    margin: 9px;
+}
+.foto-2{
+    margin:20px 0px 0px 60px;
+    height: 92px;
+    width: 190px;
+    
+}
+
+.nulo{
+    display: flex;
+    color: brown;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.end{
+    display: flex;
+    font-weight: bold;
+    color: rgb(42, 165, 58);
+    font-size: 40px;
+    align-items: center;
+    justify-content: center;
+    line-height: 50px;
+    flex:1  ;
 }

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="base.js"></script>
+
     <title>Urna Eletronica </title>
 </head>
 
@@ -17,22 +17,34 @@
     <div class="urna">
         <div class="tela">
 
-            <div class=tela-cima>
-                <div class="cargo">VOTANDO PARA:</div>
-                <div class="cargo-nome"> <span>PRESIDENTE</span> </div>
+            <div class="tela-cima">
+                <span class="cargo">VOTANDO PARA:</span>
+                <div class="cargo-nome"> <span>VEREADOR</span> </div>
                 <div class="cargo-escolha">
-
+                    <div class="num pisca"></div>
+                    <div class="num "></div>
                 </div>
 
 
                 <div class="tela-dados">
-                    NOME:XX
-                    PARTIDO:XX
-                    VICE-PREFEITO:XXXX
+                    <span>NOME:XX</span>
+                    <span> PARTIDO:XX</span>
+                    <span>VICE-PREFEITO:XXXX</span>
+
+
                 </div>
-                <div class="cargo-foto">FOTO</div>
+                <div class="cargo-foto">
+                    <div class="foto"> </div>
+                    <span class="foto-nome">PREFEITO</span>
+                    <div class="foto-2"></div>
+                    <span class="foto-nome">VICE-PREFEITO</span>
+                </div>
 
             </div>
+
+
+
+
             <div class="tela-baixo">
                 Tela:</br>
                 CONFIRMA para CONFIRMAR seu voto </br>
@@ -47,38 +59,43 @@
         <div class="teclado">
             <li>
             <li class="linhabota">
-                <button id="botaotela">1</button>
-                <button id="botaotela">2</button>
-                <button id="botaotela">3</button>
+                <button id="botaotela" onclick="clicou('1')">1</button>
+                <button id="botaotela" onclick="clicou('2')">2</button>
+                <button id="botaotela" onclick="clicou('3')">3</button>
             </li>
 
             <li class="linhabota">
-                <button id="botaotela">4</button>
-                <button id="botaotela">5</button>
-                <button id="botaotela">6</button>
+                <button id="botaotela" onclick="clicou('4')">4</button>
+                <button id="botaotela" onclick="clicou('5')">5</button>
+                <button id="botaotela" onclick="clicou('6')">6</button>
             </li>
 
             <li class="linhabota">
-                <button id="botaotela">7</button>
-                <button id="botaotela">8</button>
-                <button id="botaotela">9</button>
+                <button id="botaotela" onclick="clicou('7')">7</button>
+                <button id="botaotela" onclick="clicou('8')">8</button>
+                <button id="botaotela" onclick="clicou('9')">9</button>
             </li>
 
             <li class="linhabota">
-                <button id="botaotela" style="align-items: center;">0</button>
+                <button id="botaotela" style="align-items: center;" onclick="clicou('0')">0</button>
             </li>
             </li>
 
             <div class="linhabota">
-                <button id="botaoinferior" style="background-color: white;">BRANCO</button>
-                <button id="botaoinferior" style="background-color: rgb(252, 160, 40);">CORRIGE</button>
-                <button id="botaoinferior" style="background-color: rgb(2, 199, 2);">CONFIRMA</button>
+                <button id="botaoinferior" style="background-color: white;" onclick="branco()">BRANCO</button>
+                <button id="botaoinferior" style="background-color: rgb(170, 126, 68);"
+                    onclick="corrige()">CORRIGE</button>
+                <button id="botaoinferior" style="background-color: rgb(2, 199, 2);"
+                    onclick="confirma()">CONFIRMA</button>
             </div>
 
         </div>
 
 
     </div>
+
+    <script src="stages.js"></script>
+    <script src="base.js"></script>
 </body>
 
 </html>
